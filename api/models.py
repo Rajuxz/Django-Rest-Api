@@ -1,7 +1,7 @@
 from django.db import models
 
 # Company Model
-class Comapany(models.Model):
+class Company(models.Model):
     company_id = models.AutoField(primary_key=True)
     company_name = models.CharField(max_length=100)
     company_location = models.CharField(max_length=100)
