@@ -9,6 +9,7 @@ class CompanySerializer(serializers.HyperlinkedModelSerializer):
 
 
 class EmployeeSerialaizer(serializers.HyperlinkedModelSerializer):
+    company_id = serializers.ReadOnlyField()
     class Meta:
         model = Employee
         fields = "__all__"
